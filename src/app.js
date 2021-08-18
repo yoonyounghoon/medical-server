@@ -2,6 +2,10 @@ const express = require('express');
 const app = express();
 const request = require('request-promise-native');
 const convert = require('xml-js');
+const cors = require('cors');
+
+// cors 설정
+app.use(cors());
 
 // env 파일 사용 설정
 require('dotenv').config();

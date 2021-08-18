@@ -15,11 +15,7 @@ function RemoveJsonTextAttribute(value, parentElement) {
   } catch (e) {
     console.log(e);
   }
-
-app.get('/', (req,res)=>{
-  res.send("hi");
-})
-
+}
 
 // 시도, 시군구 기준으로 병원 가져오기
 app.get('/hospital/:siDoCd/:siGunGuCd', async (req, res) => {

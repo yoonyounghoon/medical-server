@@ -3,9 +3,12 @@ const app = express();
 const request = require('request-promise-native');
 const convert = require('xml-js');
 const cors = require('cors');
+const morgan = require('morgan');
 
 // cors 설정
 app.use(cors());
+// log 설정
+app.use(morgan('dev'));
 
 // env 파일 사용 설정
 require('dotenv').config();
